@@ -10,6 +10,7 @@ import { app, server } from "../lib/socket.js";
 import path from "path";
 
 dotenv.config();
+const __dirname = path.resolve();
 // Enable CORS first
 app.use(cors({
     origin: "http://localhost:5173",
